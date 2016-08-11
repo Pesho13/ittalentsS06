@@ -1,0 +1,61 @@
+#more-movies {
+    background-color:black;
+    color: white;
+    text-align: center;
+	
+	p {
+		padding: 0.5em;
+	    font-size: 0.8em;
+	    color: #8A8180;
+	}
+}
+
+#more-movies {
+	h2 {
+   		padding: 0.5em;
+	}
+	
+	h2:hover {
+ 		color:#F5394B;
+	}
+}
+
+#more-movies > div{
+    width: 65.5%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#covers-container {
+    display: inline-block;
+    width: 100%;
+	
+	.cover {
+	    float: left;
+	    margin: 1% 1%;
+	    transition: transform 0.7s;
+		
+		img {
+		    width: 150px;
+		    height: 195px;
+		}
+	}
+	
+	.cover:hover {
+	    transform:scale(1.1);
+	}
+}
+
+#view-more {
+    padding: 1em;
+    border: 1px solid grey;
+    border-radius: 40px;
+    width: 8em;
+    font-size: 0.8em;
+    margin: 1.5em auto;
+	
+	a {
+	    text-decoration: none;
+	    color: white;
+	}
+}

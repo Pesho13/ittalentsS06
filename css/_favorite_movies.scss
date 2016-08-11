@@ -1,0 +1,53 @@
+#favorite {
+    width: 100%;
+    background-image: url("../images/background-black.jpg");
+    overflow: auto;
+
+	
+	p {
+	    text-align: center;
+	    font-size: 0.80em;
+	    padding: 0 5em 3em 5em;
+	    color: #8A8180;
+	}
+}
+
+#favorite h1, #more-movies h1, #popular h1, #mail h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5em 0;
+    color: white;
+}
+
+form {
+    display: inline-block;
+    width: 100%;
+}
+
+#genre div {
+    float: left;
+    width: 130px;
+    color: white;
+    margin: 0 6%;
+}
+
+[type=radio] {
+    margin: 0.5em 0.5em;
+}
+
+#search {
+    width: 10%;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
+    color: white;
+    margin: 2em auto;
+    border: 1px solid grey;
+    border-radius: 40px;
+	
+	a {
+	    text-decoration: none;
+	    color: white;
+	}
+}

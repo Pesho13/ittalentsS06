@@ -1,0 +1,442 @@
+@CHARSET "UTF-8";
+
+$header_color:black;
+$nav_color:#F53A4B;
+
+body {
+    font-family: "Arial, Helvetica", sans-serif;
+    
+}
+
+#container {
+    width: 1000px;
+    margin: 2px auto;
+}
+
+header {
+    display: inline-block;
+    width:100%;
+    background-color: $header_color;
+    color: white;
+    
+    h1 {
+	    font-size: 2em;
+	    font-weight: bold;
+	    float: left;
+	    padding: 10px 10px;
+	    margin-left: 5%;
+	}
+}
+
+#normal-bar {
+    float:right;
+	
+	li {
+	    float: left;
+	    margin: 0 1.5em;
+	    color: #8A8180;
+	}
+	
+	li:hover {
+	    color: white;
+	}
+}
+
+#side-bar {
+    display: none;
+}
+
+#home {
+    display: none;
+}
+
+/* navigation */
+#large-screen {
+    background-color: $nav_color;
+    margin-top: -3px;
+	
+	ul {
+	    display: inline-block;
+	    width: 100%;
+	    margin: 0 auto;
+		
+		li {
+		    float: left;
+		    width:14.66%;
+		    text-align: center;
+		    color: white;
+		    padding: 1em 0;
+		    text-transform: uppercase;
+		    font-size: small;
+		}
+		
+		li:hover {
+		    color: blue;    
+		}
+		
+		li:first-child {
+		    margin-left: 10%;
+		}
+	}
+	
+}
+
+#mobile-nav {
+	display: none;
+	text-align: center;
+}
+
+#main-movie {
+    background-image: url("../images/exmachina.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+	
+	h1 {
+	    font-size: 1.5em;
+	    font-weight: bold;
+	    padding-top: 20%;
+	}
+	
+	p {
+	    margin-top: 2em;
+	    color: #8A8180;
+	}
+}
+
+
+#mobile-movie {
+    display: none;
+}
+
+
+#about {
+    display: inline-block;
+    margin: 1% auto 15% auto;
+}
+
+.about {
+    float: left;  
+    border: 1px solid grey;
+    font-size: 0.5em;
+    padding: 3em 5em;
+    border-radius: 40px;
+    margin: 0 0.5em;
+	
+	a {
+	    text-decoration: none;
+	    color: white;
+	}
+}
+
+/* FAVORITE MOVIES */
+
+@import 'favorite_movies';
+
+/* more-movies */
+
+@import 'more_movies';
+
+/* POPULAR */
+
+#popular{
+    background-color:black;
+    color: white;
+    text-align: center;
+	
+	h2 {
+	    padding: 0.3em;
+	    font-size: 0.8em;
+	}
+}
+
+#popular > div{
+    width: 65.5%;
+    margin: 0 auto;
+}
+
+#popular-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 3em;
+	
+	.popular {
+	    float: left;
+	    margin: 0.5em 0.5em;
+	    transition: transform 0.7s;
+		
+		img {
+		    width: 90px;
+		    height: 90px;
+		}
+		span {
+		    font-size: 12px;
+		    color: red;
+		}
+	}
+	
+	.popular:hover {
+	    transform:scale(1.1);
+	}
+}
+
+#testimonials {
+    background-image: url("../images/background-pink.jpg");
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+    img {
+	    float: left;
+	    margin: 0 10%;
+	    width: 200px;
+	    height: 200px;
+	}
+
+	h1 {
+	    font-size: 1.5em;
+	    font-weight: bold;
+	    padding: 50px 0;
+	}
+	
+	h2 {
+	    padding: 20px 150px 5px 150px;
+	    
+	}
+	
+	p {
+	    font-size: 0.8em;
+	    font-style: italic;
+	}
+	
+	h3 {
+	    padding: 30px 15px 60px 15px;
+	}
+}
+
+#testimonials-container {
+    width: 291px;
+    margin: 0 auto;
+}
+
+#testimonials-container > div {
+    width: 100%;
+    display: inline-block;
+	
+	.arrows {
+	    float: left;
+	    font-size: 32px;
+	    padding-top: 2.5em;
+	}
+} 
+
+
+/* MAIL */
+
+#mail {
+    display: inline-block;
+    width: 100%;
+    background-image: url("../images/background-black.jpg");
+    background-size: 100% 100%;
+    color: white;
+	
+	form {
+	    display: block;
+	    width: 80%;
+	    margin: 0 auto;
+	    
+		[type=text] {
+		    border: none;
+		    background: none;
+		}
+	
+	    .form-div{
+		    float: left;
+		    width: 45%;
+		    margin: 3em 2.5%;
+		    border-bottom: 1px solid grey;
+		    font-size: 1em;
+		    
+		    label {
+		    	transition: font-size 0.7s;
+		    }
+		    label:hover {
+		    	font-size:0.8em;
+		    }
+		    
+		}
+		
+		#comment {
+		    float: left;
+		    width: 95%;
+		    margin: 3em 2.5%;
+		    border-bottom: 1px solid grey;
+			
+			textarea {
+			    background: none;
+			    font-size: 1em;
+			    color: white;
+			    border: none;
+			}
+		}
+		#submit-button {
+		    display: block;
+		    padding: 1em;
+		    border: 1px solid grey;
+		    border-radius: 40px;
+		    width: 8em;
+		    background: none;
+		    color: white;
+		    font-size: 0.8em;
+		    margin: 1.5em auto;
+		}
+
+		#submit-button:hover {
+		    background-color: white;
+		    color: black;
+		}
+	}
+}
+
+#map {
+	width:100%;
+}
+
+/*footer*/
+
+#footer {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    background-color: black;
+    font-size: 0.8em;
+	
+	div {
+	    float: left;
+	    padding: 3% 7%;
+	}
+	
+	img {
+	    width: 20px;
+	    height: 20px;
+	    margin: 0 10px;
+	}
+}
+
+
+
+/* Responsive style */
+
+@media all and (max-width: 999px) {
+	#container {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 400px) {
+	#large-screen  {
+		display: none;
+	  
+	    ul {
+	    	li {
+	        	display: none;
+	    	}
+		}
+	}
+	
+	#mobile-nav {
+		display: block;
+        float: left;
+        width:100%;
+        color: white;
+        font-size: small;
+        background-color: #F53A4B;
+        margin-top: -3px;
+	    
+	    ul {
+	    	li {
+	        	padding: 0.5em;
+	    	}
+	    
+	    	li:hover {
+	    		color: blue; 
+	    	}
+	    }
+	}
+    
+    #main-movie {
+        display: none;
+    }
+    
+    #mobile-movie {
+        display: inline-block;
+        background-image: url('../images/spongebob.png');
+        background-size: 100% 100%;
+        width: 100%;
+        color: white;
+        text-align: center;
+        border: 1px solid white;
+	    
+	    h1 {
+	        font-size: 1.5em;
+	        font-weight: bold;
+	        padding-top: 20%;
+	    }
+	    
+	    p {
+	        margin-top: 2em;
+	    }
+    }
+
+    
+    .about {
+        padding: 2em 3em;
+        margin-top: 1em;
+    }
+    
+    #genre div {
+        width: 150px;
+    }
+    
+    
+    
+    #side-bar {
+        display: block;
+        background-color: #202A37;
+        position: absolute;
+        float: left;
+        width: 80px;
+        height: 207px;
+	    
+	    li {
+	        padding: 8px;
+	        color: white;
+	    }
+	    
+	    li:hover {
+	        color: green;
+	    }
+    }
+
+    #normal-bar {
+        display: none;
+    }
+    
+    header h1 {
+        margin: 0  25%;
+    }
+}
+
+
+
+@media all and (max-width: 600px) {
+    .form-div, #comment {
+        width: 95%;
+    }
+}
+
+
+
+
+
